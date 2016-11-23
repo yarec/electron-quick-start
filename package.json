@@ -1,6 +1,6 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
+  "name": "electron-quick-start-updater",
+  "version": "0.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
@@ -16,7 +16,14 @@
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
+  "build": {
+    "appId": "your.id",
+    "asar": true,
+    "win": {
+      "target": "squirrel"
+    }
+  },
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron-prebuilt": "^1.4.7"
   }
 }
